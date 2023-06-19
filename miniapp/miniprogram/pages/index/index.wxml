@@ -1,0 +1,62 @@
+<!-- index.wxml -->
+<view class="container">
+  <!-- swiper -->
+  <swiper indicator-dots class="swiper-container">
+    <swiper-item wx:for="{{list}}" wx:key="index">
+      <view class="swiper-item">
+        <image mode="aspectFill" src="./images/icon.jpg" />
+      </view>
+    </swiper-item>
+  </swiper>
+  <!-- tabs -->
+  <view class="tabs">
+    <view class="tab" wx:for="{{tabs}}" wx:key="index">
+      <image mode="aspectFill" src="./images/icon.jpg" />
+      <view>功能{{index}}</view>
+    </view>
+  </view>
+  <!-- goods -->
+  <view class="goods">
+    <view class="good-item" bindtap="handleTap" data-index="{{index}}" wx:for="{{goods}}" wx:key="index">
+      <image mode="aspectFill" src="./images/icon.jpg" />
+      <view>功能{{index}}</view>
+    </view>
+  </view>
+  <!-- modal -->
+  <view class="good-modal" bindtap="close" wx:if="{{visible}}">
+    <view class="content">
+      <view class="title">功能{{current}}</view>
+      <view class="goods">
+        <view class="good" wx:for="{{goods}}" wx:key="index">
+          <image mode="aspectFill" src="./images/icon.jpg" />
+          <view>功能</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- tab-bar -->
+  <view class="tab-bar">
+    <view class="bar-item">
+      <image mode="aspectFill" src="./images/icon.jpg" />
+      <view>Tab</view>
+    </view>
+    <view class="bar-item">
+      <image mode="aspectFill" src="./images/icon.jpg" />
+      <view>Tab</view>
+    </view>
+    <view class="bar-item add">
+      <view class="bound">
+        <view class="text">+</view>
+      </view>
+      <view class="name">Tab</view>
+    </view>
+    <view class="bar-item">
+      <image mode="aspectFill" src="./images/icon.jpg" />
+      <view>Tab</view>
+    </view>
+    <view class="bar-item">
+      <image mode="aspectFill" src="./images/icon.jpg" />
+      <view>Tab</view>
+    </view>
+  </view>
+</view>

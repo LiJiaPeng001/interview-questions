@@ -1,0 +1,162 @@
+Image{
+  margin: 0;
+}
+View{
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #e5e5e5;
+}
+.swiper-container {
+  height: 400rpx;
+  width: 100%;
+}
+.swiper-item {
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.swiper-item Image {
+  width: 100%;
+  height: 100%;
+}
+.tabs{
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30rpx;
+  color: #fff;
+  font-size: 24rpx;
+}
+.tab{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.tab Image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-bottom: 6rpx;
+}
+.goods{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.good-item{
+  box-sizing: border-box;
+  width: 187.5rpx;
+  height: 187.5rpx;
+  background-color: #fff;
+  border-right: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.good-item:nth-of-type(4n){
+  border-right: none;
+}
+.good-item Image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 10rpx;
+}
+.tab-bar{
+  display: flex;
+  align-items: center;
+  padding: 20rpx 40rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #fff;
+  justify-content: space-between;
+}
+.tab-bar Image{
+  width: 60rpx;
+  height: 60rpx;
+}
+  .tab-bar .bar-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20rpx;
+  }
+.tab-bar .add .name{
+  padding-top: 40rpx;
+}
+.good-modal{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+.bound{
+  border-radius: 50% 50% 0 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  width: 120rpx;
+  height: 120rpx;
+  background-color: #fff;
+  position: absolute;
+  top: -50rpx;
+  padding: 8rpx;
+}
+.bound .text{
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 30rpx;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.good-modal .content{
+  background-color: #fff;
+  width: 610rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.good-modal .content .title{
+  background: #eeee;
+  color: #000;
+  line-height: 80rpx;
+  text-align: center;
+}
+.good-modal .goods{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20rpx;
+}
+.good-modal Image{
+  width: 120rpx;
+  height: 120rpx;
+  margin-bottom: 4rpx;
+}
+.good-modal .good{
+  margin-right: 30rpx;
+  margin-bottom: 20rpx;
+}
+.good-modal .good:nth-of-type(4n){
+  margin-right: 0;
+}
