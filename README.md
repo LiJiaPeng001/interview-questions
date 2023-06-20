@@ -4,6 +4,7 @@
 ```bash
 cd miniapp
 ```
+## 小程序视频请查看test.mp4
 ## 后台管理
 ```bash
 cd admin
