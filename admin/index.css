@@ -34,6 +34,7 @@
 .tab-content{
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 .tab-content .tabs{
   height: 60px;
@@ -41,6 +42,9 @@
   padding: 0 30px;
   color: #fff;
   flex-shrink: 0;
+}
+.tab-content .content{
+  overflow-y: auto;
 }
 .tab-content .tabs .tab{
   margin-right: 20px;
@@ -66,10 +70,6 @@
 .tab-content .line {
   text-align: center;
   padding-bottom: 20px;
-}
-.tab-content .content{
-  display: flex;
-  flex-direction: column;
 }
 .tab-content .form{
   background-color: #fff;
@@ -105,6 +105,22 @@
   background-color: #fff;
   color: #333;
   border: 1px solid #d9d9d9;
+}
+.tips {
+  margin-bottom: 16px;
+  background-color: #fffbe6;
+  border: 1px solid #ffe58f;
+  box-sizing: border-box;
+    color: #000000d9;
+    line-height: 1.5715;
+    list-style: none;
+    font-feature-settings: "tnum";
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    word-wrap: break-word;
+    border-radius: 2px;
 }
 table {
   width: 100%;
