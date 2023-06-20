@@ -7,6 +7,5 @@ cd miniapp
 ## 后台管理
 ```bash
 cd admin
-pnpm i  # or npm i
-pnpm run dev
+open index.html
 ```

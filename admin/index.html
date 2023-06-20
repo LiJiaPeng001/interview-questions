@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>admin</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+  <div id="app" class="flex">
+    <!-- 菜单栏 -->
+    <div class="menus">
+      <div class="title">正业科技</div>
+      <div class="menu-list">
+        <div class="menu-item">功能A</div>
+        <div class="menu-item">功能B</div>
+        <div class="menu-item">功能C</div>
+        <div class="menu-item">功能D</div>
+        <div class="menu-item">功能E</div>
+      </div>
+    </div>
+    <!-- tab -->
+    <div class="tab-content flex1">
+      <div class="tabs middle-flex">
+        <div class="tab">首页</div>
+        <div class="tab">主数据</div>
+        <div class="tab">辖区管理</div>
+      </div>
+      <!-- content -->
+      <div class="content">
+        <div class="crumb">
+          <div class="desc">首页/年度会议/新增会议</div>
+          <div class="title">新增会议</div>
+        </div>
+        <div class="page flex1">
+          <!-- line -->
+          <div class="line">Form表单</div>
+          <div class="form">
+            <div class="form-item">
+              <div class="label">Button：</div>
+              <button>click me</button>
+            </div>
+            <div class="form-item">
+              <div class="label">Select：</div>
+              <select>
+                <option value="1">同学1</option>
+                <option value="2">同学2</option>
+                <option value="3">同学3</option>
+              </select>
+            </div>
+            <div class="form-item">
+              <div class="label">Input：</div>
+              <Input placeholder="请输入你的名字"></Input>
+            </div>
+            <div class="form-item">
+              <div class="label">Textarea：</div>
+              <textarea placeholder="请输入你的名字"></textarea>
+            </div>
+            <div class="form-item">
+              <div class="label">Table：</div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>address</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>李小朋朋</td>
+                    <td>26.8</td>
+                    <td>普陀区</td>
+                    <td><span class="edit">编辑</span></td>
+                  </tr>
+                  <tr>
+                    <td><Input placeholder="请输入"></Input></td>
+                    <td><Input placeholder="请输入"></Input></td>
+                    <td><Input placeholder="请输入"></Input></td>
+                    <td><span class="edit">编辑</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+          <!-- 一些按钮 -->
+          <div class="line">一些按钮</div>
+          <div class="buttons">
+            <Button>保存</Button>
+            <Button>新增</Button>
+            <Button class="remove">删除</Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
